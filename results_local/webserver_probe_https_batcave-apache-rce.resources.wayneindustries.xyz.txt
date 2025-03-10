@@ -1,0 +1,34 @@
+[[34mINF[0m] Threads automatically set to 50
+Running HTTPX Enumeration...
+[[34mINF[0m] Dumped HTTP request for http://batcave-apache-rce.resources.wayneindustries.xyz
+
+GET / HTTP/1.1
+Host: batcave-apache-rce.resources.wayneindustries.xyz
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15
+Accept-Charset: utf-8
+Accept-Encoding: gzip
+
+[[34mINF[0m] Dumped HTTP response for http://batcave-apache-rce.resources.wayneindustries.xyz
+
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 45
+Accept-Ranges: bytes
+Content-Type: text/html
+Date: Sun, 09 Mar 2025 22:40:45 GMT
+Etag: "2d-432a5e4a73a80"
+Last-Modified: Mon, 11 Jun 2007 18:53:14 GMT
+Server: Apache/2.4.63 (Unix)
+
+<html><body><h1>It works!</h1></body></html>
+http://batcave-apache-rce.resources.wayneindustries.xyz
+[[34mINF[0m] Dumped HTTP request for https://batcave-apache-rce.resources.wayneindustries.xyz
+
+GET / HTTP/1.1
+Host: batcave-apache-rce.resources.wayneindustries.xyz
+User-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:121.0) Gecko/20100101 Firefox/121.0
+Accept-Charset: utf-8
+Accept-Encoding: gzip
+
+Httpx scan completed successfully
+{"content":"eyJ0YXJnZXRzIjpbImh0dHBzOi8vYmF0Y2F2ZS1hcGFjaGUtcmNlLnJlc291cmNlcy53YXluZWluZHVzdHJpZXMueHl6Il0sInVybHMiOlt7InVybCI6Imh0dHA6Ly9iYXRjYXZlLWFwYWNoZS1yY2UucmVzb3VyY2VzLndheW5laW5kdXN0cmllcy54eXoiLCJzdGF0dXMiOjIwMCwidGl0bGUiOiIifV19","started_at":"0001-01-01T00:00:00Z","completed_at":"2025-03-09T15:40:54.913609-07:00","status":0}

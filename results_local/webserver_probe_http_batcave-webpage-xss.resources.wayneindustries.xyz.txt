@@ -1,0 +1,69 @@
+[[34mINF[0m] Threads automatically set to 50
+Running HTTPX Enumeration...
+[[34mINF[0m] Dumped HTTP request for http://batcave-webpage-xss.resources.wayneindustries.xyz
+
+GET / HTTP/1.1
+Host: batcave-webpage-xss.resources.wayneindustries.xyz
+User-Agent: Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+Accept-Charset: utf-8
+Accept-Encoding: gzip
+
+[[34mINF[0m] Dumped HTTP response for http://batcave-webpage-xss.resources.wayneindustries.xyz
+
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1038
+Accept-Ranges: bytes
+Content-Type: text/html
+Date: Sun, 09 Mar 2025 22:44:50 GMT
+Etag: "679ba7b3-40e"
+Last-Modified: Thu, 30 Jan 2025 16:24:19 GMT
+Server: nginx/1.27.3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerable XSS Page</title>
+</head>
+<body>
+    <h1>Search Page</h1>
+
+    <form method="GET">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="query" placeholder="Type something...">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <h2>Search Results: Try alert("XSS")</h2>
+        <p>You searched for: <span id="result"></span></p>
+    </div>
+
+    <script>
+        // Get the query parameter from the URL
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get('query');
+
+        if (query) {
+            document.getElementById("search").value = query; // Keep input in field
+            
+            // Inject user input directly into the page (Vulnerable to XSS)
+            document.getElementById("result").innerHTML = query;
+        }
+    </script>
+</body>
+</html>
+
+http://batcave-webpage-xss.resources.wayneindustries.xyz
+[[34mINF[0m] Dumped HTTP request for https://batcave-webpage-xss.resources.wayneindustries.xyz
+
+GET / HTTP/1.1
+Host: batcave-webpage-xss.resources.wayneindustries.xyz
+User-Agent: Mozilla/5.0 (SS; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0
+Accept-Charset: utf-8
+Accept-Encoding: gzip
+
+Httpx scan completed successfully
+{"content":"eyJ0YXJnZXRzIjpbImh0dHA6Ly9iYXRjYXZlLXdlYnBhZ2UteHNzLnJlc291cmNlcy53YXluZWluZHVzdHJpZXMueHl6Il0sInVybHMiOlt7InVybCI6Imh0dHA6Ly9iYXRjYXZlLXdlYnBhZ2UteHNzLnJlc291cmNlcy53YXluZWluZHVzdHJpZXMueHl6Iiwic3RhdHVzIjoyMDAsInRpdGxlIjoiVnVsbmVyYWJsZSBYU1MgUGFnZSJ9XX0=","started_at":"0001-01-01T00:00:00Z","completed_at":"2025-03-09T15:45:00.34339-07:00","status":0}

@@ -1,0 +1,68 @@
+INFO  [2025-03-09T15:44:46.452101-07:00] Initializing browser
+INFO  [2025-03-09T15:44:47.063872-07:00] Creating page (url: http://batcave-webpage-basic-auth.resources.wayneindustries.xyz)
+ERROR [2025-03-09T15:44:50.270942-07:00] Failed to create page (error: map[Stack:goroutine 1 [running]:
+runtime/debug.Stack()
+	/Users/runner/hostedtoolcache/go/1.22.6/arm64/src/runtime/debug/stack.go:24 +0x64
+github.com/go-rod/rod.Try.func1()
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/utils.go:187 +0x3c
+panic({0x104765e60?, 0x140003bece0?})
+	/Users/runner/hostedtoolcache/go/1.22.6/arm64/src/runtime/panic.go:770 +0x124
+github.com/go-rod/rod/lib/utils.init.func2({0x104765e60?, 0x140003bece0?})
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/lib/utils/utils.go:68 +0x24
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).InitializeBrowser.New.(*Browser).WithPanic.genE.func1({0x140004a2090?, 0x16d6d2b18?, 0x3f?})
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/must.go:36 +0x70
+github.com/go-rod/rod.(*Browser).MustPage(0x1400046e480, {0x14000abb800?, 0xd?, 0x140003be630?})
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/must.go:71 +0xec
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).Capture.func1()
+	/Users/runner/work/webscan/webscan/internal/capture/browser.go:58 +0x19c
+github.com/go-rod/rod.Try(0x104a92140?)
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/utils.go:191 +0x58
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).Capture(0x140002ce400, {0x104a92140, 0x14000b682a0}, {0x16d6d2b18, 0x3f}, 0x10273e700?)
+	/Users/runner/work/webscan/webscan/internal/capture/browser.go:56 +0x144
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).CaptureScreenshot(0x140002ce400, {0x104a92140, 0x14000b682a0}, {0x16d6d2b18, 0x3f}, 0x14000abbbb8)
+	/Users/runner/work/webscan/webscan/internal/capture/screenshot.go:25 +0x84
+github.com/Method-Security/webscan/cmd.(*WebScan).InitPagecaptureCommand.func1(0x14000b42008, {0x103bd47a0?, 0x4?, 0x103bd4684?})
+	/Users/runner/work/webscan/webscan/cmd/pagecapture.go:60 +0x1a8
+github.com/spf13/cobra.(*Command).execute(0x14000b42008, {0x140002d20c0, 0x4, 0x4})
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1019 +0x820
+github.com/spf13/cobra.(*Command).ExecuteC(0x140003b1b08)
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1148 +0x350
+github.com/spf13/cobra.(*Command).Execute(0x140002d1780?)
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1071 +0x1c
+main.main()
+	/Users/runner/work/webscan/webscan/main.go:23 +0x114
+ Value:map[Reason:net::ERR_INVALID_AUTH_CREDENTIALS]], url: http://batcave-webpage-basic-auth.resources.wayneindustries.xyz)
+ERROR [2025-03-09T15:44:50.271208-07:00] Failed to capture HTML content (error: map[Stack:goroutine 1 [running]:
+runtime/debug.Stack()
+	/Users/runner/hostedtoolcache/go/1.22.6/arm64/src/runtime/debug/stack.go:24 +0x64
+github.com/go-rod/rod.Try.func1()
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/utils.go:187 +0x3c
+panic({0x104765e60?, 0x140003bece0?})
+	/Users/runner/hostedtoolcache/go/1.22.6/arm64/src/runtime/panic.go:770 +0x124
+github.com/go-rod/rod/lib/utils.init.func2({0x104765e60?, 0x140003bece0?})
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/lib/utils/utils.go:68 +0x24
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).InitializeBrowser.New.(*Browser).WithPanic.genE.func1({0x140004a2090?, 0x16d6d2b18?, 0x3f?})
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/must.go:36 +0x70
+github.com/go-rod/rod.(*Browser).MustPage(0x1400046e480, {0x14000abb800?, 0xd?, 0x140003be630?})
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/must.go:71 +0xec
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).Capture.func1()
+	/Users/runner/work/webscan/webscan/internal/capture/browser.go:58 +0x19c
+github.com/go-rod/rod.Try(0x104a92140?)
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/utils.go:191 +0x58
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).Capture(0x140002ce400, {0x104a92140, 0x14000b682a0}, {0x16d6d2b18, 0x3f}, 0x10273e700?)
+	/Users/runner/work/webscan/webscan/internal/capture/browser.go:56 +0x144
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).CaptureScreenshot(0x140002ce400, {0x104a92140, 0x14000b682a0}, {0x16d6d2b18, 0x3f}, 0x14000abbbb8)
+	/Users/runner/work/webscan/webscan/internal/capture/screenshot.go:25 +0x84
+github.com/Method-Security/webscan/cmd.(*WebScan).InitPagecaptureCommand.func1(0x14000b42008, {0x103bd47a0?, 0x4?, 0x103bd4684?})
+	/Users/runner/work/webscan/webscan/cmd/pagecapture.go:60 +0x1a8
+github.com/spf13/cobra.(*Command).execute(0x14000b42008, {0x140002d20c0, 0x4, 0x4})
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1019 +0x820
+github.com/spf13/cobra.(*Command).ExecuteC(0x140003b1b08)
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1148 +0x350
+github.com/spf13/cobra.(*Command).Execute(0x140002d1780?)
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1071 +0x1c
+main.main()
+	/Users/runner/work/webscan/webscan/main.go:23 +0x114
+ Value:map[Reason:net::ERR_INVALID_AUTH_CREDENTIALS]], url: http://batcave-webpage-basic-auth.resources.wayneindustries.xyz)
+INFO  [2025-03-09T15:44:50.277323-07:00] Screenshot capture successful (target: http://batcave-webpage-basic-auth.resources.wayneindustries.xyz)
+{"content":"eyJyZXF1ZXN0Ijp7ImJhc2VVcmwiOiJodHRwOi8vYmF0Y2F2ZS13ZWJwYWdlLWJhc2ljLWF1dGgucmVzb3VyY2VzLndheW5laW5kdXN0cmllcy54eXoiLCJwYXRoIjoiIiwibWV0aG9kIjoiR0VUIiwidGltZXN0YW1wIjoiMjAyNS0wMy0wOVQxNTo0NDo0Ni0wNzowMCJ9LCJlcnJvcnMiOlsiZXJyb3IgdmFsdWU6ICZyb2QuTmF2aWdhdGlvbkVycm9ye1JlYXNvbjpcIm5ldDo6RVJSX0lOVkFMSURfQVVUSF9DUkVERU5USUFMU1wifVxuZ29yb3V0aW5lIDEgW3J1bm5pbmddOlxucnVudGltZS9kZWJ1Zy5TdGFjaygpXG5cdC9Vc2Vycy9ydW5uZXIvaG9zdGVkdG9vbGNhY2hlL2dvLzEuMjIuNi9hcm02NC9zcmMvcnVudGltZS9kZWJ1Zy9zdGFjay5nbzoyNCArMHg2NFxuZ2l0aHViLmNvbS9nby1yb2Qvcm9kLlRyeS5mdW5jMSgpXG5cdC9Vc2Vycy9ydW5uZXIvd29yay93ZWJzY2FuL3dlYnNjYW4vdmVuZG9yL2dpdGh1Yi5jb20vZ28tcm9kL3JvZC91dGlscy5nbzoxODcgKzB4M2NcbnBhbmljKHsweDEwNDc2NWU2MD8sIDB4MTQwMDAzYmVjZTA/fSlcblx0L1VzZXJzL3J1bm5lci9ob3N0ZWR0b29sY2FjaGUvZ28vMS4yMi42L2FybTY0L3NyYy9ydW50aW1lL3BhbmljLmdvOjc3MCArMHgxMjRcbmdpdGh1Yi5jb20vZ28tcm9kL3JvZC9saWIvdXRpbHMuaW5pdC5mdW5jMih7MHgxMDQ3NjVlNjA/LCAweDE0MDAwM2JlY2UwP30pXG5cdC9Vc2Vycy9ydW5uZXIvd29yay93ZWJzY2FuL3dlYnNjYW4vdmVuZG9yL2dpdGh1Yi5jb20vZ28tcm9kL3JvZC9saWIvdXRpbHMvdXRpbHMuZ286NjggKzB4MjRcbmdpdGh1Yi5jb20vTWV0aG9kLVNlY3VyaXR5L3dlYnNjYW4vaW50ZXJuYWwvY2FwdHVyZS4oKkJyb3dzZXJQYWdlQ2FwdHVyZXIpLkluaXRpYWxpemVCcm93c2VyLk5ldy4oKkJyb3dzZXIpLldpdGhQYW5pYy5nZW5FLmZ1bmMxKHsweDE0MDAwNGEyMDkwPywgMHgxNmQ2ZDJiMTg/LCAweDNmP30pXG5cdC9Vc2Vycy9ydW5uZXIvd29yay93ZWJzY2FuL3dlYnNjYW4vdmVuZG9yL2dpdGh1Yi5jb20vZ28tcm9kL3JvZC9tdXN0LmdvOjM2ICsweDcwXG5naXRodWIuY29tL2dvLXJvZC9yb2QuKCpCcm93c2VyKS5NdXN0UGFnZSgweDE0MDAwNDZlNDgwLCB7MHgxNDAwMGFiYjgwMD8sIDB4ZD8sIDB4MTQwMDAzYmU2MzA/fSlcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi92ZW5kb3IvZ2l0aHViLmNvbS9nby1yb2Qvcm9kL211c3QuZ286NzEgKzB4ZWNcbmdpdGh1Yi5jb20vTWV0aG9kLVNlY3VyaXR5L3dlYnNjYW4vaW50ZXJuYWwvY2FwdHVyZS4oKkJyb3dzZXJQYWdlQ2FwdHVyZXIpLkNhcHR1cmUuZnVuYzEoKVxuXHQvVXNlcnMvcnVubmVyL3dvcmsvd2Vic2Nhbi93ZWJzY2FuL2ludGVybmFsL2NhcHR1cmUvYnJvd3Nlci5nbzo1OCArMHgxOWNcbmdpdGh1Yi5jb20vZ28tcm9kL3JvZC5UcnkoMHgxMDRhOTIxNDA/KVxuXHQvVXNlcnMvcnVubmVyL3dvcmsvd2Vic2Nhbi93ZWJzY2FuL3ZlbmRvci9naXRodWIuY29tL2dvLXJvZC9yb2QvdXRpbHMuZ286MTkxICsweDU4XG5naXRodWIuY29tL01ldGhvZC1TZWN1cml0eS93ZWJzY2FuL2ludGVybmFsL2NhcHR1cmUuKCpCcm93c2VyUGFnZUNhcHR1cmVyKS5DYXB0dXJlKDB4MTQwMDAyY2U0MDAsIHsweDEwNGE5MjE0MCwgMHgxNDAwMGI2ODJhMH0sIHsweDE2ZDZkMmIxOCwgMHgzZn0sIDB4MTAyNzNlNzAwPylcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi9pbnRlcm5hbC9jYXB0dXJlL2Jyb3dzZXIuZ286NTYgKzB4MTQ0XG5naXRodWIuY29tL01ldGhvZC1TZWN1cml0eS93ZWJzY2FuL2ludGVybmFsL2NhcHR1cmUuKCpCcm93c2VyUGFnZUNhcHR1cmVyKS5DYXB0dXJlU2NyZWVuc2hvdCgweDE0MDAwMmNlNDAwLCB7MHgxMDRhOTIxNDAsIDB4MTQwMDBiNjgyYTB9LCB7MHgxNmQ2ZDJiMTgsIDB4M2Z9LCAweDE0MDAwYWJiYmI4KVxuXHQvVXNlcnMvcnVubmVyL3dvcmsvd2Vic2Nhbi93ZWJzY2FuL2ludGVybmFsL2NhcHR1cmUvc2NyZWVuc2hvdC5nbzoyNSArMHg4NFxuZ2l0aHViLmNvbS9NZXRob2QtU2VjdXJpdHkvd2Vic2Nhbi9jbWQuKCpXZWJTY2FuKS5Jbml0UGFnZWNhcHR1cmVDb21tYW5kLmZ1bmMxKDB4MTQwMDBiNDIwMDgsIHsweDEwM2JkNDdhMD8sIDB4ND8sIDB4MTAzYmQ0Njg0P30pXG5cdC9Vc2Vycy9ydW5uZXIvd29yay93ZWJzY2FuL3dlYnNjYW4vY21kL3BhZ2VjYXB0dXJlLmdvOjYwICsweDFhOFxuZ2l0aHViLmNvbS9zcGYxMy9jb2JyYS4oKkNvbW1hbmQpLmV4ZWN1dGUoMHgxNDAwMGI0MjAwOCwgezB4MTQwMDAyZDIwYzAsIDB4NCwgMHg0fSlcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi92ZW5kb3IvZ2l0aHViLmNvbS9zcGYxMy9jb2JyYS9jb21tYW5kLmdvOjEwMTkgKzB4ODIwXG5naXRodWIuY29tL3NwZjEzL2NvYnJhLigqQ29tbWFuZCkuRXhlY3V0ZUMoMHgxNDAwMDNiMWIwOClcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi92ZW5kb3IvZ2l0aHViLmNvbS9zcGYxMy9jb2JyYS9jb21tYW5kLmdvOjExNDggKzB4MzUwXG5naXRodWIuY29tL3NwZjEzL2NvYnJhLigqQ29tbWFuZCkuRXhlY3V0ZSgweDE0MDAwMmQxNzgwPylcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi92ZW5kb3IvZ2l0aHViLmNvbS9zcGYxMy9jb2JyYS9jb21tYW5kLmdvOjEwNzEgKzB4MWNcbm1haW4ubWFpbigpXG5cdC9Vc2Vycy9ydW5uZXIvd29yay93ZWJzY2FuL3dlYnNjYW4vbWFpbi5nbzoyMyArMHgxMTRcbiJdfQ==","started_at":"0001-01-01T00:00:00Z","completed_at":"2025-03-09T15:44:50.277402-07:00","status":0}

@@ -1,0 +1,5 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"batcave-swagger-pii.resources.wayneindustries.xyz","ip":"3.95.186.27","timestamp":"2025-03-09T22:38:49.98254Z","port":53,"protocol":"tcp","tls":false}
+{"host":"batcave-swagger-pii.resources.wayneindustries.xyz","ip":"3.95.186.27","timestamp":"2025-03-09T22:38:51.189445Z","port":80,"protocol":"tcp","tls":false}
+[INF] Found 2 ports on host batcave-swagger-pii.resources.wayneindustries.xyz (3.95.186.27)
+{"content":{"hosts":[{"host":"batcave-swagger-pii.resources.wayneindustries.xyz","ip":"3.95.186.27","ports":[{"port":53,"protocol":"tcp"},{"port":80,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:38:49.32008-07:00","completed_at":"2025-03-09T15:39:09.946003-07:00","status":0}

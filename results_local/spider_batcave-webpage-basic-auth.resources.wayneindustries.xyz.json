@@ -1,0 +1,3 @@
+[[34mINF[0m] Started standard crawling for => http://batcave-webpage-basic-auth.resources.wayneindustries.xyz
+http://batcave-webpage-basic-auth.resources.wayneindustries.xyz
+{"content":{"targets":["http://batcave-webpage-basic-auth.resources.wayneindustries.xyz"],"links":[{"link":"http://batcave-webpage-basic-auth.resources.wayneindustries.xyz","status":401}],"errors":[]},"started_at":"0001-01-01T00:00:00Z","completed_at":"2025-03-09T15:44:46.121434-07:00","status":0}

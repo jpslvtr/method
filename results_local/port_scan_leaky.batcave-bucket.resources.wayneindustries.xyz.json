@@ -1,0 +1,13 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"3.5.30.222","timestamp":"2025-03-09T22:39:10.703154Z","port":53,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"52.217.37.24","timestamp":"2025-03-09T22:39:11.746132Z","port":53,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"3.5.30.222","timestamp":"2025-03-09T22:39:11.896606Z","port":8080,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"52.217.37.24","timestamp":"2025-03-09T22:39:11.896941Z","port":444,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"3.5.30.222","timestamp":"2025-03-09T22:39:12.94079Z","port":443,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"52.217.37.24","timestamp":"2025-03-09T22:39:13.931527Z","port":80,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"3.5.30.222","timestamp":"2025-03-09T22:39:16.07119Z","port":444,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"3.5.30.222","timestamp":"2025-03-09T22:39:16.892899Z","port":80,"protocol":"tcp","tls":false}
+{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"52.217.37.24","timestamp":"2025-03-09T22:39:26.524622Z","port":443,"protocol":"tcp","tls":false}
+[INF] Found 5 ports on host leaky.batcave-bucket.resources.wayneindustries.xyz (3.5.30.222)
+[INF] Found 4 ports on host leaky.batcave-bucket.resources.wayneindustries.xyz (52.217.37.24)
+{"content":{"hosts":[{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"3.5.30.222","ports":[{"port":53,"protocol":"tcp"},{"port":8080,"protocol":"tcp"},{"port":443,"protocol":"tcp"},{"port":444,"protocol":"tcp"},{"port":80,"protocol":"tcp"}]},{"host":"leaky.batcave-bucket.resources.wayneindustries.xyz","ip":"52.217.37.24","ports":[{"port":80,"protocol":"tcp"},{"port":443,"protocol":"tcp"},{"port":53,"protocol":"tcp"},{"port":444,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:39:10.018044-07:00","completed_at":"2025-03-09T15:39:42.894453-07:00","status":0}

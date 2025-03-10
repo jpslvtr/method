@@ -1,0 +1,2 @@
+[INF] Running CONNECT scan with non root privileges
+{"content":{"errors":["no valid ipv4 or ipv6 targets were found"]},"started_at":"2025-03-09T15:38:04.980028-07:00","completed_at":"2025-03-09T15:38:07.775596-07:00","status":0}

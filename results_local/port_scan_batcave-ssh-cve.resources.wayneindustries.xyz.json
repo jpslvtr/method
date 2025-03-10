@@ -1,0 +1,4 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"batcave-ssh-cve.resources.wayneindustries.xyz","ip":"52.207.209.64","timestamp":"2025-03-09T22:37:45.918764Z","port":53,"protocol":"tcp","tls":false}
+[INF] Found 1 ports on host batcave-ssh-cve.resources.wayneindustries.xyz (52.207.209.64)
+{"content":{"hosts":[{"host":"batcave-ssh-cve.resources.wayneindustries.xyz","ip":"52.207.209.64","ports":[{"port":53,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:37:44.293-07:00","completed_at":"2025-03-09T15:38:04.900635-07:00","status":0}

@@ -1,0 +1,43 @@
+INFO  [2025-03-09T15:41:05.40182-07:00] Initializing browser
+INFO  [2025-03-09T15:41:06.403848-07:00] Creating page (url: http://batcave-apache-rce.resources.wayneindustries.xyz)
+INFO  [2025-03-09T15:41:09.648533-07:00] Waiting for navigation to complete
+INFO  [2025-03-09T15:41:09.651919-07:00] Waiting for DOM to be stable
+INFO  [2025-03-09T15:41:14.662588-07:00] Waiting for response received event
+INFO  [2025-03-09T15:41:14.663804-07:00] Processing response received event
+INFO  [2025-03-09T15:41:14.663908-07:00] Event URL (url: http://batcave-apache-rce.resources.wayneindustries.xyz/)
+INFO  [2025-03-09T15:41:14.663974-07:00] Evaluating page content
+INFO  [2025-03-09T15:41:14.669373-07:00] Encoding page content
+INFO  [2025-03-09T15:41:14.669448-07:00] Parsing URL to get path and query parameters
+INFO  [2025-03-09T15:41:14.669513-07:00] Creating page (url: http://batcave-apache-rce.resources.wayneindustries.xyz)
+INFO  [2025-03-09T15:41:14.720026-07:00] Waiting navigation to complete for redirects or DOM loading
+INFO  [2025-03-09T15:41:14.723306-07:00] Navigation complete
+INFO  [2025-03-09T15:41:14.723356-07:00] Waiting for DOM to stabilize
+INFO  [2025-03-09T15:41:19.731091-07:00] DOM stabilized
+INFO  [2025-03-09T15:41:19.731347-07:00] Waiting for response received event
+INFO  [2025-03-09T15:41:44.670179-07:00] Processing response headers
+ERROR [2025-03-09T15:41:44.6712-07:00] Failed to create page (error: map[Stack:goroutine 1 [running]:
+runtime/debug.Stack()
+	/Users/runner/hostedtoolcache/go/1.22.6/arm64/src/runtime/debug/stack.go:24 +0x64
+github.com/go-rod/rod.Try.func1()
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/utils.go:187 +0x3c
+panic({0x104e505c0?, 0x1060ed3c0?})
+	/Users/runner/hostedtoolcache/go/1.22.6/arm64/src/runtime/panic.go:770 +0x124
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).CaptureScreenshot.func1()
+	/Users/runner/work/webscan/webscan/internal/capture/screenshot.go:95 +0x8d8
+github.com/go-rod/rod.Try(0x105192140?)
+	/Users/runner/work/webscan/webscan/vendor/github.com/go-rod/rod/utils.go:191 +0x58
+github.com/Method-Security/webscan/internal/capture.(*BrowserPageCapturer).CaptureScreenshot(0x14000394940, {0x105192140, 0x14000b5e4e0}, {0x16cfd2b20, 0x37}, 0x1400082fbb8)
+	/Users/runner/work/webscan/webscan/internal/capture/screenshot.go:52 +0x208
+github.com/Method-Security/webscan/cmd.(*WebScan).InitPagecaptureCommand.func1(0x140008f8008, {0x1042d47a0?, 0x4?, 0x1042d4684?})
+	/Users/runner/work/webscan/webscan/cmd/pagecapture.go:60 +0x1a8
+github.com/spf13/cobra.(*Command).execute(0x140008f8008, {0x1400090f640, 0x4, 0x4})
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1019 +0x820
+github.com/spf13/cobra.(*Command).ExecuteC(0x1400042bb08)
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1148 +0x350
+github.com/spf13/cobra.(*Command).Execute(0x1400003d780?)
+	/Users/runner/work/webscan/webscan/vendor/github.com/spf13/cobra/command.go:1071 +0x1c
+main.main()
+	/Users/runner/work/webscan/webscan/main.go:23 +0x114
+ Value:invalid memory address or nil pointer dereference], url: http://batcave-apache-rce.resources.wayneindustries.xyz)
+INFO  [2025-03-09T15:41:44.672202-07:00] Screenshot capture successful (target: http://batcave-apache-rce.resources.wayneindustries.xyz)
+{"content":"eyJyZXF1ZXN0Ijp7ImJhc2VVcmwiOiJodHRwOi8vYmF0Y2F2ZS1hcGFjaGUtcmNlLnJlc291cmNlcy53YXluZWluZHVzdHJpZXMueHl6LyIsInBhdGgiOiIvIiwibWV0aG9kIjoiR0VUIiwic3RhdHVzQ29kZSI6MjAwLCJyZXNwb25zZUJvZHkiOiJQR2gwYld3K1BHaGxZV1ErUEM5b1pXRmtQanhpYjJSNVBqeG9NVDVKZENCM2IzSnJjeUU4TDJneFBnbzhMMkp2WkhrK1BDOW9kRzFzUGc9PSIsInJlc3BvbnNlSGVhZGVycyI6eyJBY2NlcHQtUmFuZ2VzIjoiYnl0ZXMiLCJDb250ZW50LUxlbmd0aCI6IjQ1IiwiQ29udGVudC1UeXBlIjoidGV4dC9odG1sIiwiRGF0ZSI6IlN1biwgMDkgTWFyIDIwMjUgMjI6NDE6MDkgR01UIiwiRVRhZyI6IlwiMmQtNDMyYTVlNGE3M2E4MFwiIiwiTGFzdC1Nb2RpZmllZCI6Ik1vbiwgMTEgSnVuIDIwMDcgMTg6NTM6MTQgR01UIiwiU2VydmVyIjoiQXBhY2hlLzIuNC42MyAoVW5peCkifSwidGltZXN0YW1wIjoiMjAyNS0wMy0wOVQxNTo0MTowNS0wNzowMCJ9LCJlcnJvcnMiOlsiZXJyb3IgdmFsdWU6IFwiaW52YWxpZCBtZW1vcnkgYWRkcmVzcyBvciBuaWwgcG9pbnRlciBkZXJlZmVyZW5jZVwiXG5nb3JvdXRpbmUgMSBbcnVubmluZ106XG5ydW50aW1lL2RlYnVnLlN0YWNrKClcblx0L1VzZXJzL3J1bm5lci9ob3N0ZWR0b29sY2FjaGUvZ28vMS4yMi42L2FybTY0L3NyYy9ydW50aW1lL2RlYnVnL3N0YWNrLmdvOjI0ICsweDY0XG5naXRodWIuY29tL2dvLXJvZC9yb2QuVHJ5LmZ1bmMxKClcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi92ZW5kb3IvZ2l0aHViLmNvbS9nby1yb2Qvcm9kL3V0aWxzLmdvOjE4NyArMHgzY1xucGFuaWMoezB4MTA0ZTUwNWMwPywgMHgxMDYwZWQzYzA/fSlcblx0L1VzZXJzL3J1bm5lci9ob3N0ZWR0b29sY2FjaGUvZ28vMS4yMi42L2FybTY0L3NyYy9ydW50aW1lL3BhbmljLmdvOjc3MCArMHgxMjRcbmdpdGh1Yi5jb20vTWV0aG9kLVNlY3VyaXR5L3dlYnNjYW4vaW50ZXJuYWwvY2FwdHVyZS4oKkJyb3dzZXJQYWdlQ2FwdHVyZXIpLkNhcHR1cmVTY3JlZW5zaG90LmZ1bmMxKClcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi9pbnRlcm5hbC9jYXB0dXJlL3NjcmVlbnNob3QuZ286OTUgKzB4OGQ4XG5naXRodWIuY29tL2dvLXJvZC9yb2QuVHJ5KDB4MTA1MTkyMTQwPylcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi92ZW5kb3IvZ2l0aHViLmNvbS9nby1yb2Qvcm9kL3V0aWxzLmdvOjE5MSArMHg1OFxuZ2l0aHViLmNvbS9NZXRob2QtU2VjdXJpdHkvd2Vic2Nhbi9pbnRlcm5hbC9jYXB0dXJlLigqQnJvd3NlclBhZ2VDYXB0dXJlcikuQ2FwdHVyZVNjcmVlbnNob3QoMHgxNDAwMDM5NDk0MCwgezB4MTA1MTkyMTQwLCAweDE0MDAwYjVlNGUwfSwgezB4MTZjZmQyYjIwLCAweDM3fSwgMHgxNDAwMDgyZmJiOClcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi9pbnRlcm5hbC9jYXB0dXJlL3NjcmVlbnNob3QuZ286NTIgKzB4MjA4XG5naXRodWIuY29tL01ldGhvZC1TZWN1cml0eS93ZWJzY2FuL2NtZC4oKldlYlNjYW4pLkluaXRQYWdlY2FwdHVyZUNvbW1hbmQuZnVuYzEoMHgxNDAwMDhmODAwOCwgezB4MTA0MmQ0N2EwPywgMHg0PywgMHgxMDQyZDQ2ODQ/fSlcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi9jbWQvcGFnZWNhcHR1cmUuZ286NjAgKzB4MWE4XG5naXRodWIuY29tL3NwZjEzL2NvYnJhLigqQ29tbWFuZCkuZXhlY3V0ZSgweDE0MDAwOGY4MDA4LCB7MHgxNDAwMDkwZjY0MCwgMHg0LCAweDR9KVxuXHQvVXNlcnMvcnVubmVyL3dvcmsvd2Vic2Nhbi93ZWJzY2FuL3ZlbmRvci9naXRodWIuY29tL3NwZjEzL2NvYnJhL2NvbW1hbmQuZ286MTAxOSArMHg4MjBcbmdpdGh1Yi5jb20vc3BmMTMvY29icmEuKCpDb21tYW5kKS5FeGVjdXRlQygweDE0MDAwNDJiYjA4KVxuXHQvVXNlcnMvcnVubmVyL3dvcmsvd2Vic2Nhbi93ZWJzY2FuL3ZlbmRvci9naXRodWIuY29tL3NwZjEzL2NvYnJhL2NvbW1hbmQuZ286MTE0OCArMHgzNTBcbmdpdGh1Yi5jb20vc3BmMTMvY29icmEuKCpDb21tYW5kKS5FeGVjdXRlKDB4MTQwMDAwM2Q3ODA/KVxuXHQvVXNlcnMvcnVubmVyL3dvcmsvd2Vic2Nhbi93ZWJzY2FuL3ZlbmRvci9naXRodWIuY29tL3NwZjEzL2NvYnJhL2NvbW1hbmQuZ286MTA3MSArMHgxY1xubWFpbi5tYWluKClcblx0L1VzZXJzL3J1bm5lci93b3JrL3dlYnNjYW4vd2Vic2Nhbi9tYWluLmdvOjIzICsweDExNFxuIl19","started_at":"0001-01-01T00:00:00Z","completed_at":"2025-03-09T15:41:44.673681-07:00","status":0}

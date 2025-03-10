@@ -1,0 +1,5 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"batcave-nginx-file.resources.wayneindustries.xyz","ip":"44.203.36.79","timestamp":"2025-03-09T22:39:49.76576Z","port":53,"protocol":"tcp","tls":false}
+{"host":"batcave-nginx-file.resources.wayneindustries.xyz","ip":"44.203.36.79","timestamp":"2025-03-09T22:39:50.128491Z","port":80,"protocol":"tcp","tls":false}
+[INF] Found 2 ports on host batcave-nginx-file.resources.wayneindustries.xyz (44.203.36.79)
+{"content":{"hosts":[{"host":"batcave-nginx-file.resources.wayneindustries.xyz","ip":"44.203.36.79","ports":[{"port":53,"protocol":"tcp"},{"port":80,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:39:49.017524-07:00","completed_at":"2025-03-09T15:40:09.760502-07:00","status":0}

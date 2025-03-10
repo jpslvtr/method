@@ -1,0 +1,7 @@
+[[34mINF[0m] Started standard crawling for => http://batcave-swagger-pii.resources.wayneindustries.xyz
+http://batcave-swagger-pii.resources.wayneindustries.xyz
+http://batcave-swagger-pii.resources.wayneindustries.xyz/swagger-ui.css
+http://batcave-swagger-pii.resources.wayneindustries.xyz/swagger-ui-standalone-preset.js
+http://batcave-swagger-pii.resources.wayneindustries.xyz/swagger-ui-bundle.js
+http://batcave-swagger-pii.resources.wayneindustries.xyz/'+escapeHtml(s[i].href)+'
+{"content":{"targets":["http://batcave-swagger-pii.resources.wayneindustries.xyz"],"links":[{"link":"http://batcave-swagger-pii.resources.wayneindustries.xyz","status":200},{"link":"http://batcave-swagger-pii.resources.wayneindustries.xyz/swagger-ui.css","status":200},{"link":"http://batcave-swagger-pii.resources.wayneindustries.xyz/swagger-ui-standalone-preset.js","status":200},{"link":"http://batcave-swagger-pii.resources.wayneindustries.xyz/swagger-ui-bundle.js","status":200},{"link":"http://batcave-swagger-pii.resources.wayneindustries.xyz/'+escapeHtml(s[i].href)+'","status":404}],"errors":[]},"started_at":"0001-01-01T00:00:00Z","completed_at":"2025-03-09T15:43:31.593045-07:00","status":0}

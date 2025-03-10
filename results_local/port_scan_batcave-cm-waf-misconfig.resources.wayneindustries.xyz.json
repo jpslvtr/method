@@ -1,0 +1,5 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"batcave-cm-waf-misconfig.resources.wayneindustries.xyz","ip":"44.204.8.211","timestamp":"2025-03-09T22:38:29.252409Z","port":53,"protocol":"tcp","tls":false}
+{"host":"batcave-cm-waf-misconfig.resources.wayneindustries.xyz","ip":"44.204.8.211","timestamp":"2025-03-09T22:38:30.473492Z","port":22,"protocol":"tcp","tls":false}
+[INF] Found 2 ports on host batcave-cm-waf-misconfig.resources.wayneindustries.xyz (44.204.8.211)
+{"content":{"hosts":[{"host":"batcave-cm-waf-misconfig.resources.wayneindustries.xyz","ip":"44.204.8.211","ports":[{"port":53,"protocol":"tcp"},{"port":22,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:38:28.612246-07:00","completed_at":"2025-03-09T15:38:49.252586-07:00","status":0}

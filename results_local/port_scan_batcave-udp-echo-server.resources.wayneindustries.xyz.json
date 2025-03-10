@@ -1,0 +1,4 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"batcave-udp-echo-server.resources.wayneindustries.xyz","ip":"54.146.140.176","timestamp":"2025-03-09T22:40:12.4628Z","port":53,"protocol":"tcp","tls":false}
+[INF] Found 1 ports on host batcave-udp-echo-server.resources.wayneindustries.xyz (54.146.140.176)
+{"content":{"hosts":[{"host":"batcave-udp-echo-server.resources.wayneindustries.xyz","ip":"54.146.140.176","ports":[{"port":53,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:40:09.828505-07:00","completed_at":"2025-03-09T15:40:32.474836-07:00","status":0}

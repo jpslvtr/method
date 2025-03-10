@@ -1,0 +1,56 @@
+[[34mINF[0m] Threads automatically set to 50
+Running HTTPX Enumeration...
+[[34mINF[0m] Dumped HTTP request for https://leaky.batcave-bucket.resources.wayneindustries.xyz
+
+GET / HTTP/1.1
+Host: leaky.batcave-bucket.resources.wayneindustries.xyz
+User-Agent: Mozilla/5.0 (SS; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept-Charset: utf-8
+Accept-Encoding: gzip
+
+[[34mINF[0m] Dumped HTTP response for https://leaky.batcave-bucket.resources.wayneindustries.xyz
+
+HTTP/1.1 200 OK
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: application/xml
+Date: Sun, 09 Mar 2025 22:46:01 GMT
+Server: AmazonS3
+X-Amz-Bucket-Region: us-east-1
+X-Amz-Id-2: Qsxo4J/RDZjOm/jEDlKLa8Dv33y4sW0BB+pKiP/LAH/PAc6N4M4SIEBb2Cmq0dyevWINqoRLN+o=
+X-Amz-Request-Id: 99A00HHZ86QYBBDY
+
+1e6
+<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>leaky.batcave-bucket.resources.wayneindustries.xyz</Name><Prefix></Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated><Contents><Key>customers.json</Key><LastModified>2025-01-29T00:04:43.000Z</LastModified><ETag>&quot;69e4090a99729093b7a66e10f875fe72&quot;</ETag><Size>3522</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
+0
+
+https://leaky.batcave-bucket.resources.wayneindustries.xyz
+[[34mINF[0m] Dumped HTTP request for http://leaky.batcave-bucket.resources.wayneindustries.xyz
+
+GET / HTTP/1.1
+Host: leaky.batcave-bucket.resources.wayneindustries.xyz
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Tokai/21.1.294403 Version/17.2 Safari/605.1.15
+Accept-Charset: utf-8
+Accept-Encoding: gzip
+
+[[34mINF[0m] Dumped HTTP response for http://leaky.batcave-bucket.resources.wayneindustries.xyz
+
+HTTP/1.1 200 OK
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: application/xml
+Date: Sun, 09 Mar 2025 22:46:01 GMT
+Server: AmazonS3
+X-Amz-Bucket-Region: us-east-1
+X-Amz-Id-2: DyNf/+CdfSkl1rzGRLqar+oXr12M9OsMmgvwZzJHb3sSkMlb97uBSBFUDmznxNDe6oHvYK+RX/JN9qT4CMHxPtzQR2ewyKNoJ69BdH32a6I=
+X-Amz-Request-Id: 99ADH6NC2Z5RGEPM
+
+1e6
+<?xml version="1.0" encoding="UTF-8"?>
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>leaky.batcave-bucket.resources.wayneindustries.xyz</Name><Prefix></Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated><Contents><Key>customers.json</Key><LastModified>2025-01-29T00:04:43.000Z</LastModified><ETag>&quot;69e4090a99729093b7a66e10f875fe72&quot;</ETag><Size>3522</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
+0
+
+http://leaky.batcave-bucket.resources.wayneindustries.xyz
+Httpx scan completed successfully
+{"content":"eyJ0YXJnZXRzIjpbImh0dHA6Ly9sZWFreS5iYXRjYXZlLWJ1Y2tldC5yZXNvdXJjZXMud2F5bmVpbmR1c3RyaWVzLnh5eiJdLCJ1cmxzIjpbeyJ1cmwiOiJodHRwczovL2xlYWt5LmJhdGNhdmUtYnVja2V0LnJlc291cmNlcy53YXluZWluZHVzdHJpZXMueHl6Iiwic3RhdHVzIjoyMDAsInRpdGxlIjoiIn0seyJ1cmwiOiJodHRwOi8vbGVha3kuYmF0Y2F2ZS1idWNrZXQucmVzb3VyY2VzLndheW5laW5kdXN0cmllcy54eXoiLCJzdGF0dXMiOjIwMCwidGl0bGUiOiIifV19","started_at":"0001-01-01T00:00:00Z","completed_at":"2025-03-09T15:46:00.326564-07:00","status":0}

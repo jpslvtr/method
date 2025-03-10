@@ -1,0 +1,5 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"batcave-apache-rce.resources.wayneindustries.xyz","ip":"3.85.233.14","timestamp":"2025-03-09T22:36:37.793216Z","port":53,"protocol":"tcp","tls":false}
+{"host":"batcave-apache-rce.resources.wayneindustries.xyz","ip":"3.85.233.14","timestamp":"2025-03-09T22:36:37.913193Z","port":80,"protocol":"tcp","tls":false}
+[INF] Found 2 ports on host batcave-apache-rce.resources.wayneindustries.xyz (3.85.233.14)
+{"content":{"hosts":[{"host":"batcave-apache-rce.resources.wayneindustries.xyz","ip":"3.85.233.14","ports":[{"port":53,"protocol":"tcp"},{"port":80,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:36:37.121766-07:00","completed_at":"2025-03-09T15:36:57.760444-07:00","status":0}

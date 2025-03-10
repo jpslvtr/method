@@ -1,0 +1,4 @@
+[INF] Running CONNECT scan with non root privileges
+{"host":"batcave-apache-options-bleed.resources.wayneindustries.xyz","ip":"54.236.161.241","timestamp":"2025-03-09T22:37:03.819855Z","port":53,"protocol":"tcp","tls":false}
+[INF] Found 1 ports on host batcave-apache-options-bleed.resources.wayneindustries.xyz (54.236.161.241)
+{"content":{"hosts":[{"host":"batcave-apache-options-bleed.resources.wayneindustries.xyz","ip":"54.236.161.241","ports":[{"port":53,"protocol":"tcp"}]}]},"started_at":"2025-03-09T15:37:02.156153-07:00","completed_at":"2025-03-09T15:37:22.797088-07:00","status":0}
