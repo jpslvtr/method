@@ -29,7 +29,7 @@ The process:
    - This step reveals services (HTTP on 80, HTTPS on 443, DNS on 53, SSH on 22, etc.).
 
 3. Web Enumeration
-   - For subdomains that expose HTTP/HTTPS, we fetch basic pages, capture HTML content, take screenshots, and spider links to better understand what the server hosts.
+   - For subdomains that expose HTTP/HTTPS: fetch basic pages, capture HTML content, take screenshots, and spider links to better understand what the server hosts.
 
 4. Vulnerability Checks
    - Test common scenarios: path traversal attempts (like /.git/config access) and potentially misconfigured CORS headers.
@@ -53,6 +53,7 @@ This command attempts to retrieve typical sensitive files. If it succeeds, the t
       batcave-webpage-xss.resources.wayneindustries.xyz
       leaky.batcave-bucket.resources.wayneindustries.xyz
       batcave-cm-waf-misconfig.resources.wayneindustries.xyz
+      ...
       ```
    - Some subdomains are placeholders; some run no obvious services. Others present multiple open ports, raising concerns.
    - Why It’s Relevant: Each subdomain potentially hosts unique apps or configurations. Attackers often target lesser-known subdomains because organizations may overlook them.
@@ -66,7 +67,7 @@ This command attempts to retrieve typical sensitive files. If it succeeds, the t
    - Why It’s Relevant: Attackers could exploit unpatched or misconfigured services. For example, old Apache or SSH daemons with known CVEs can be compromised quickly.
 
 3. Web Enumeration Insights
-   - `batcave-webpage-basic-auth.resources.wayneindustries.xyz`: Returns a 401 HTTP status code without credentials, meaning BasicAuth is required. We saw no sign of HTTPS enforcement, suggesting credentials might be exposed in plain text if used incorrectly.
+   - `batcave-webpage-basic-auth.resources.wayneindustries.xyz`: Returns a 401 HTTP status code without credentials, meaning BasicAuth is required. Saw no sign of HTTPS enforcement, suggesting credentials might be exposed in plain text if used incorrectly.
    - `leaky.batcave-bucket.resources.wayneindustries.xyz`: Name implies a storage “bucket.” The site responded on ports 80, 443, 8080, and 444. That many open ports can indicate multiple services or a misconfigured environment.
    - Why It’s Relevant:
       - BasicAuth can be easily sniffed if not served over TLS.
@@ -101,4 +102,3 @@ This is an example for enabling HTTPS.
 ## Next Steps
 - Integrate these scans into your build pipeline or monthly audit routine.
 - Discuss with Wayne Industries whether these subdomains are valid, which services are intentionally public, and how they secure them.
-- If this approach resonates with your team, consider a more robust testing suite or an all-in-one product solution that Method Security can develop. We want your feedback to shape future features—this is the essence of Commitment Engineering: quickly show you real data, let you see immediate value, and incorporate your input into final product designs.
